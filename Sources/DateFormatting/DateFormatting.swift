@@ -14,7 +14,7 @@ public struct DateFormatting {
     func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
-        return formatter.string(from: dateString)
+        return formatter.string(from: date)
     }
 
     func dateFromString(dateString: String) -> Date? {
